@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Budgetapp</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="title" style="margin-top: 80px; font-size: 30px;">
+            <h3>BUDGET APP</h3>
+        </div>
+
+        <div class="budget-feedback" style="padding: 4px; width: 40%;"></div>
+
+        <div id="first-group" style="height: 250px;">
+
+            <form id="budget-form" class="budget-form" style="float: left; margin-top: 60px;">
+                <h5>Please Enter Your Budget</h5>
+                <div class="form-group">
+                    <input type="number" id="budget-input" class="budget-input">
+                </div><br>
+                <button type="submit" class="budget-submit">calculate</button>
+            </form>
+
+            <section id="budgets"
+                style=" padding-top: 0 !important; margin-top: 0;">
+                <div id="budget-budget" style="align-content: center; text-align: center;">
+                    <h6>BUDGET</h6>
+                    <span class="budget-icon"><i class="fa fa-money"></i></span>
+                    <h4 id="budget"><span>$</span><span id="budget-amount">0</span></h4>
+                </div>
+
+                <div id="budget-expense" style="text-align: center">
+                    <h6>EXPENSES</h6>
+                    <span class="expense-icon"><i class="fa fa-credit-card"></i></span>
+                    <h4 id="expense" class="expense"><span>$</span><span id="expense-amount">0</span></h4>
+                </div>
+
+                <div id="budget-balance" style="text-align: center">
+                    <h6>BALANCE</h6>
+                    <span class="balance-icon"><i class="fa fa-dollar"></i></span>
+                    <h4 id="balance"> <span>$ </span><span id="balance-amount">0</span></h4>
+                </div>
+            </section>
+        </div>
+
+
+
+        <div class="expense-feedback" id="expense-feedback" style="padding: 4px; width: 40%">expense feedback</div>
+
+        <div id="second-group">
+            <form id="expense-form" class="expense-form" style="margin-top: 50px; float: left;">
+                <h5>Please Enter Your Expense</h5>
+                <div class="form-group">
+                    <input type="text" class="form-control expense-input" id="expense-input">
+                </div>
+
+                <h5>Please Enter Expense Amount</h5>
+                <div class="form-group">
+                    <input type="number" class="form-control expense-input" id="amount-input">
+                </div><br>
+
+                <button type="submit" class="expense-submit" id="expense-submit">Add Expense</button>
+            </form>
+        </div>
+
+        <div class="expense-list" id="expense-list" style="float: right; margin-right: 100px; margin-top: 30px;">
+            <h5 class="list-item">Expense Title</h5>
+            <h5 class="list-item">Expense Value</h5>
+            <h5 class="list-item"></h5>
+        </div>
+    
+    <!-- single expense -->
+
+     <div class="expenses" style="float: right; margin-right: 170px;">
+              <div id="expense-item" style="align-items: baseline;">
+                <!-- <h6 class="expense-title list-item">- title</h6>
+               <h5 class="expense-amount list-item">amount</h5>
+               <div class="expense-icons list-item">
+                <a href="#" class="edit-icon" data-id="${expense.id}">
+                 <i class="fa fa-edit"></i>
+                </a>
+                <a href="#" class="delete-icon" data-id="${expense.id}">
+                 <i class="fa fa-trash"></i>
+                </a>
+               </div> -->
+              </div>
+            </div> 
+
+
+</div>
+
+
+    <script src="scripts/budget.js"></script>
+</body>
+
+</html>
